@@ -1,0 +1,35 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    
+    
+    <hibernate-mapping>
+    
+    
+     <!--
+     <class name="beans.Student" table="Hibernate" schema="system">
+     
+      <id name="id" column="id"></id>
+    <property name="name" column="name"></property>
+    <property name="email" column="email"></property>
+    <property name="marks" column="marks"></property>
+    
+    </class>
+       -->
+   
+    
+    <!--  Incase you are using autoDDL and to create the table by its own then use this code -->
+   
+   
+    <class name="beans.Student" table="Hibernate" schema="system">
+     <!-- Here Column names are not required  -->
+    <id name="id"></id>
+    <property name="name"></property>
+    <property name="email"></property>
+    <property name="marks"></property>
+   
+    
+    </class>
+   
+    </hibernate-mapping>
