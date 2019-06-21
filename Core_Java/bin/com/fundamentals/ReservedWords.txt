@@ -1,0 +1,90 @@
+reserved Words (53)
+
+50 -----Keywords(Functionalities)
+3=------Reserevd Literals(Values)
+
+
+
+Literals:
+---------------
+true,false,null
+
+
+Reserved Keywords:
+--------------------------
+Used-----48
+Unused----2(goto,const)
+   
+   
+   
+   Datatypes-----------  (8)
+   
+   Byte
+   short
+   int 
+   long
+   boolean
+   float
+   double
+   char
+   
+   
+   
+   
+  Control Statements-------------(1)
+  
+   if
+   else
+   switch
+   case
+   default
+   while
+   do
+   for
+   break
+   continue
+   return
+   
+   Access Modifiers------------(11)+1 (Default)
+   
+   public 
+   private
+   protected
+   final
+   abstract
+   static
+   synchronized
+   native
+   strictfp
+   transient
+    volatile
+    
+    Exceptions---(6)
+    
+    try
+    catch
+    finally
+    throw
+    throws
+    assert(1.4V)
+    
+    Class--------(6)
+    
+    class
+    Interface
+    extends
+    implements
+    package
+    import
+        
+   
+Object----------------(4)
+
+new
+instanceof
+this
+super
+
+return type--------1
+
+void

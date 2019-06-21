@@ -1,0 +1,20 @@
+
+//The Generics concept is done at the compiler level and hence the typw paremwters are been replaced by type when it comes to the 
+//is been compiled and JVM has no work to do with the parametrs even when we  mention the parameters
+//JVM treats as the normal ones and we can use multiple References other than the type mentined i the parameter.
+//ie
+//AL l=new Al();
+//AL l=new Al<Integer>();
+//
+//AL l=new Al<Double>();
+//
+//AL l=new Al<Float>();
+
+//All these declarations are same and equal to the JVM and it wont cause ANY type cast prolems
+
+
+// But Compiler checks the type
+//
+//Al<String> l=new Al();
+//Al<String> l=new AL<String>();
+//both are equal but second one restricts adding other datatype othe than the String
