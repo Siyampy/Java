@@ -1,0 +1,4 @@
+Evry are left--.Right associative but 
+
+
+pre post inc/dec,ternary op,assignment op,logical not,typecast,bitwisae Not,unary =+/- are right--->Left associative
