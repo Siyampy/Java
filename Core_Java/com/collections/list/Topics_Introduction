@@ -1,0 +1,18 @@
+Every Collection ids sevloped using somedatastructure so it is user friendly
+//Common collection Interfaces
+List
+Collection
+Set 
+Sorted Set
+Map 
+Sorted Map
+Navigable map
+Navigable Set
+Queue
+
+
+Collection vs Collections
+
+
+
+Collections is a class that has several utility methods for the Collection I/F
