@@ -16,7 +16,7 @@ class Over1
 
 public class Overrriding extends Over1 {
 
-Overrriding()throws IOException
+Overrriding()throws Exception
 {
 	
 }
