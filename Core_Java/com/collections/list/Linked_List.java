@@ -21,6 +21,9 @@ public class Linked_List
 		l.addLast("Sachin");
 
 		System.out.println(l);
+		Collections.reverse(l);
+		System.out.println(l);
+
 		
 	}
 
