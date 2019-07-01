@@ -27,7 +27,7 @@ public class Functional_Interface_Static_Methods implements Aa2{
 	{
 		// TODO Auto-generated method stub
 		Aa2.m1();
-//		 Only by the interface reference then only the static metods can  be called.
+//		 Only by the interface name with . operator  then only the static metods can  be called even it is the normal class or the implementtion class.
 //		m1();
 		
 
