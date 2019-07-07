@@ -9,6 +9,10 @@ static int[] snake1= {20,10};
 static int[] snake2= {25,1};
 static int[] snake4= {70,37};
 static int[] snake3= {90,15};
+static int[] ladder1= {12,100};
+static int[] ladder2= {58,91};
+static int[] ladder4= {33,57};
+static int[] ladder3= {51,91};
 public static int roll_die()
 {
 	int random = (int )(Math.random() * 12 + 1);
@@ -51,6 +55,39 @@ public static int snakebit(int s)
 	}
 	
 }
+public static int ladder_up(int s)
+{
+	if(s==ladder1[0])
+	{
+		return ladder1[1];
+	}
+	else
+	{
+		if(s==ladder2[0])
+		{
+			return ladder2[1];
+		}
+		else
+		{
+			if(s==ladder3[0])
+			{
+				return ladder3[1];
+			}
+			else
+			{
+				if(s==ladder4[0])
+				{
+					return ladder4[1];
+				}
+				else
+				{
+					return s;
+				}
+			}
+		}
+	}
+	
+}
 	public static void main(String[] args)
 	{
 		
@@ -78,6 +115,15 @@ public static int snakebit(int s)
 				{
 					System.out.println(" Snake Biten..........");
 					s1=snakebit(s1);
+				}
+				if(s1==ladder_up(s1))
+				{
+					System.out.println("No Snake Bite");
+				}
+				else
+				{
+					System.out.println(" Snake Biten..........");
+					s1=ladder_up(s1);
 				}
 				count++;
 				if(s1==100)
@@ -107,6 +153,15 @@ public static int snakebit(int s)
 				{
 					System.out.println(" Snake Biten..........");
 					s2=snakebit(s2);
+				}
+				if(s2==ladder_up(s2))
+				{
+					System.out.println("No Snake Bite");
+				}
+				else
+				{
+					System.out.println(" Snake Biten..........");
+					s2=ladder_up(s2);
 				}
 				count++;
 				if(s2==100)
@@ -138,6 +193,15 @@ public static int snakebit(int s)
 					System.out.println(" Snake Biten..........");
 					s3=snakebit(s3);
 				}
+				if(s3==ladder_up(s3))
+				{
+					System.out.println("No Snake Bite");
+				}
+				else
+				{
+					System.out.println(" Snake Biten..........");
+					s3=ladder_up(s3);
+				}
 				count++;
 				if(s3==100)
 				{
@@ -167,6 +231,15 @@ public static int snakebit(int s)
 				{
 					System.out.println(" Snake Biten..........");
 					s4=snakebit(s4);
+				}
+				if(s4==ladder_up(s4))
+				{
+					System.out.println("No Snake Bite");
+				}
+				else
+				{
+					System.out.println(" Snake Biten..........");
+					s4=ladder_up(s4);
 				}
 				count++;
 				if(s4==100)
