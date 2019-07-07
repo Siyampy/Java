@@ -9,6 +9,11 @@ static int[] snake1= {20,10};
 static int[] snake2= {25,1};
 static int[] snake4= {70,37};
 static int[] snake3= {90,15};
+public static int roll_die()
+{
+	int random = (int )(Math.random() * 12 + 1);
+	return random;
+}
 public Snake_game()
 {
 	s1=0;s2=0;s3=0;s4=0;
@@ -62,7 +67,8 @@ public static int snakebit(int s)
 			{
 			case 1:
 				System.out.println("Roll the die-A");
-				p1=sc.nextInt();
+//				p1=sc.nextInt();
+				p1=roll_die();
 				s1+=p1;
 				if(s1==snakebit(s1))
 				{
@@ -90,7 +96,8 @@ public static int snakebit(int s)
 				break;
 			case 2:
 				System.out.println("Roll the die-B");
-				p2=sc.nextInt();
+//				p2=sc.nextInt();
+				p2=roll_die();
 				s2+=p2;
 				if(s2==snakebit(s2))
 				{
@@ -104,7 +111,7 @@ public static int snakebit(int s)
 				count++;
 				if(s2==100)
 				{
-					System.out.println("Player A won");
+					System.out.println("Player B won");
 					break exit;
 				}
 				else
@@ -119,7 +126,8 @@ public static int snakebit(int s)
 			case 3:
 				System.out.println("Roll the die-C");
 
-				p3=sc.nextInt();
+//				p3=sc.nextInt();
+				p3=roll_die();
 				s3+=p3;
 				if(s3==snakebit(s3))
 				{
@@ -133,7 +141,7 @@ public static int snakebit(int s)
 				count++;
 				if(s3==100)
 				{
-					System.out.println("Player A won");
+					System.out.println("Player C won");
 					break exit;
 				}
 				else
@@ -148,7 +156,8 @@ public static int snakebit(int s)
 			case 4:
 				System.out.println("Roll the die-D");
 
-				p4=sc.nextInt();
+//				p4=sc.nextInt();
+				p4=roll_die();
 				s4+=p4;
 				if(s4==snakebit(s4))
 				{
@@ -162,7 +171,7 @@ public static int snakebit(int s)
 				count++;
 				if(s4==100)
 				{
-					System.out.println("Player A won");
+					System.out.println("Player D won");
 					break exit;
 				}
 				else
@@ -182,6 +191,7 @@ public static int snakebit(int s)
 			
 		}
 		System.out.println("Match Over");
+		System.out.println("A--B--C--D  "+s1+"  "+s2+"  "+s3+"  "+s4+"  ");
 
 	}
 
